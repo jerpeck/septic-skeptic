@@ -1,0 +1,20 @@
+{
+    "information":{
+       "phone":"",
+       "address":{
+          "street":"",
+          "city":"",
+          "state":"",
+          "zip":""
+       },
+       "email":""
+    },
+    "hero":{
+       "title":"The Septic Skeptic",
+       "description":"Licensed, professional septic system inspection, installation, maintenance, and repair for Northern California."
+    },
+    "aboutDescription":"Septic Skeptic is a family owned and operated company whose primary goal is to provide wastewater system owners effective, low cost solutions.  Our focus is delivering proven drainfield recovery,  treatment pond sludge reduction, and effluent quality management to meet regulatory compliance. The products and services we offer are the highest quality available. Results mean value...we have it and it costs less.\nThrough our industry relationships we are able to offer turnkey projects. From design and engineering to installation and maintenance, we can address wastewater issues in residential, domestic, commercial, agricultural, and municipal settings. Our philosophy is  to create the enhanced relationships between stakeholders that result in successful achievement of all parties needs. Water quality solutions do not have to come with high costs; in our economy it isn't feasible, nor is it necessary.",
+    "works":[
+       
+    ]
+ }
