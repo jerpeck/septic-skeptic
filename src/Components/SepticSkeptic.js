@@ -12,6 +12,7 @@ import theme from '../theme';
 import Landing from './Landing';
 import About from './About';
 import Contact from './Contact';
+import ContentPage from './ContentPage';
 
 // const data = {
 //     hero: {
@@ -46,7 +47,7 @@ class SepticSkeptic extends Component {
 
     componentDidMount(){
         this.updateData();
-    }
+    };
 
     render(){
             return(
@@ -55,8 +56,7 @@ class SepticSkeptic extends Component {
                         <Router>
                             <Switch>
                                 <Route exact path="/">
-                                    {this.state.data.hero && <Landing hero={this.state.data.hero} />}
-                                    {/* <Landing hero={this.state.data.hero} /> */}
+                                    {this.state.data.hero && <Landing data={this.state.data} />}
                                 </Route>
                                 <Route exact path="/about" >
                                     <About title="About Us" description={this.state.data.aboutDescription} />
@@ -64,6 +64,9 @@ class SepticSkeptic extends Component {
                                 <Route exact path="/contact">
                                     <Contact />
                                 </Route>
+                                <Route exact path="/services/:id" render={routeProps => (
+                                    this.state.data.works && <ContentPage works={this.state.data.works} {...routeProps} />
+                                )}/>
                             </Switch>
                         </Router>
                     </ThemeProvider>

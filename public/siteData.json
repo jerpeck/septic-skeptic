@@ -1,20 +1,139 @@
 {
     "information":{
-       "phone":"",
-       "address":{
-          "street":"",
-          "city":"",
-          "state":"",
-          "zip":""
-       },
-       "email":""
+        "phone":"",
+        "address":{
+            "street":"",
+            "city":"",
+            "state":"",
+            "zip":""
+        },
+        "email":""
     },
     "hero":{
-       "title":"The Septic Skeptic",
-       "description":"Licensed, professional septic system inspection, installation, maintenance, and repair for Northern California."
+        "title":"The Septic Skeptic",
+        "description":"Licensed, professional septic system inspection, installation, maintenance, and repair for Northern California."
     },
     "aboutDescription":"Septic Skeptic is a family owned and operated company whose primary goal is to provide wastewater system owners effective, low cost solutions.  Our focus is delivering proven drainfield recovery,  treatment pond sludge reduction, and effluent quality management to meet regulatory compliance. The products and services we offer are the highest quality available. Results mean value...we have it and it costs less.\nThrough our industry relationships we are able to offer turnkey projects. From design and engineering to installation and maintenance, we can address wastewater issues in residential, domestic, commercial, agricultural, and municipal settings. Our philosophy is  to create the enhanced relationships between stakeholders that result in successful achievement of all parties needs. Water quality solutions do not have to come with high costs; in our economy it isn't feasible, nor is it necessary.",
     "works":[
-       
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard1",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard1",
+            "link":"/services/lizard1"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard2",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard2",
+            "link":"/services/lizard2"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard3",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard3",
+            "link":"/services/lizard3"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard4",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard4",
+            "link":"/services/lizard4"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard5",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard5",
+            "link":"/services/lizard5"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard6",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard6",
+            "link":"/services/lizard6"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard7",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard7",
+            "link":"/services/lizard7"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard8",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard8",
+            "link":"/services/lizard8"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard9",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard9",
+            "link":"/services/lizard9"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard10",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard10",
+            "link":"/services/lizard10"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard11",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard11",
+            "link":"/services/lizard11"
+        },
+        {
+            "image":{
+                "image":"images/lizard.jpg",
+                "title":"Contemplative Reptile"
+                },
+            "title":"Lizard",
+            "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            "id":"lizard",
+            "link":"/services/lizard12"
+        }
     ]
- }
+}

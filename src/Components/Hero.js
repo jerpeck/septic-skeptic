@@ -17,6 +17,9 @@ const useStyles = makeStyles(() => ({
     },
     buttonContainer: {
         marginTop: "32px",
+        "& button": {
+            minWidth: "155px",
+        },
     },
 }));
 
@@ -29,7 +32,7 @@ export default function Hero(props) {
     <React.Fragment>
       <CssBaseline />
       <div className={classes.root}>
-        <Container maxWidth="sm" className={classes.root}>
+        <Container maxWidth="sm" className={classes.root} >
             <Typography variant="h2" align="center" component="h2" gutterBottom>{title}</Typography>
             <Typography variant="h5" align="center" gutterBottom>{description}</Typography>
             <div className={classes.buttonContainer}>

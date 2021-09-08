@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  navBar: {
+    background: 'linear-gradient(90deg, rgba(54,245,92,1) 10%, rgba(66,165,245,1) 25%)',
+  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
@@ -25,7 +28,7 @@ export default function Nav(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" >
+      <AppBar position="static" className={classes.navBar}>
         <Toolbar >
           <Link variant="h6" component={RouterLink} to="/" >
             <IconButton >
