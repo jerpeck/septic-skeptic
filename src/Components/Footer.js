@@ -15,6 +15,7 @@ const useStyles = makeStyles(() => ({
     root: {
         padding: "48px",
         backgroundColor: "#ccc",
+        background: "linear-gradient(90deg, #f59342 4%, #fff 12%, #fff 16%, #ff1616 24%, #ff1616 28%, #fff 36%, #fff 40%, #ffe500 48%, #ffe500 52%, #fff 60%, #fff 64%, #36f55c 72%, #36f55c 76%, #fff 84%, #fff 88%, #42a5f5 96%)",
         minHeight: "146px",
         boxSizing: "border-box",
         display: "flex",

@@ -8,7 +8,8 @@ import PortfolioCard from './PortfolioCard';
 const useStyles = makeStyles(() => ({
         root: {
             width: "100%",
-            background: "#555"
+            backgroundColor: "#555",
+            background: "linear-gradient(135deg, #444, #999)",
         },
         container: {
             padding: "64px 0",
