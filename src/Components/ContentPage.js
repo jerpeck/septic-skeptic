@@ -8,16 +8,19 @@ import OnePage from './OnePage';
 const useStyles = makeStyles(() => ({
     contentPaper: {
         margin: "0 256px",
-        padding: "32px"
+        padding: "32px 64px",
+        color: "white",
+        background: "linear-gradient(158deg, rgba(119,113,109,.85) 57%, rgba(223,216,202,.85) 100%)",
     },
 }))
 
 export default function ContentPage(props) {
-    const { title, description } = props.works.filter(o => o.id === props.match.params.id)[0];
+    const { works, socialMedia } = props.data;
+    const { title, description } = works.filter(o => o.id === props.match.params.id)[0];
     const classes = useStyles();
 
     return(
-        <OnePage >
+        <OnePage contentPage socialMedia={socialMedia}>
             <Paper className={classes.contentPaper}>
                 <Typography variant="h2" >{title}</Typography>
                 <Typography variant="subtitle2" >{description}</Typography>

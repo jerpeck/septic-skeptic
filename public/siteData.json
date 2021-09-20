@@ -14,36 +14,68 @@
         "description":"Licensed, professional septic system inspection, installation, maintenance, and repair for Northern California."
     },
     "aboutDescription":"Septic Skeptic is a family owned and operated company whose primary goal is to provide wastewater system owners effective, low cost solutions.  Our focus is delivering proven drainfield recovery,  treatment pond sludge reduction, and effluent quality management to meet regulatory compliance. The products and services we offer are the highest quality available. Results mean value...we have it and it costs less.\nThrough our industry relationships we are able to offer turnkey projects. From design and engineering to installation and maintenance, we can address wastewater issues in residential, domestic, commercial, agricultural, and municipal settings. Our philosophy is  to create the enhanced relationships between stakeholders that result in successful achievement of all parties needs. Water quality solutions do not have to come with high costs; in our economy it isn't feasible, nor is it necessary.",
+    "socialMedia":[
+        {
+            "site":"Facebook",
+            "aria-label":"Facebook Link",
+            "link":"https://www.facebook.com"
+        },
+        {
+            "site":"Twitter",
+            "aria-label":"Twitter Link",
+            "link":"https://www.twitter.com"
+        },
+        {
+            "site":"GitHub",
+            "aria-label":"GitHub Link",
+            "link":"https://www.github.com"
+        },
+        {
+            "site":"YouTube",
+            "aria-label":"YouTube Link",
+            "link":"https://www.youtube.com"
+        },
+        {
+            "site":"Pinterest",
+            "aria-label":"Pinterest Link",
+            "link":"https://www.pinterest.com"
+        },
+        {
+            "site":"LinkedIn",
+            "aria-label":"LinkedIn Link",
+            "link":"https://www.linkedin.com"
+        }
+    ],
     "works":[
         {
             "image":{
-                "image":"images/lizard.jpg",
-                "title":"Contemplative Reptile"
+                "image":"images/services/inspection.jpg",
+                "title":"Septic System Inspection"
                 },
-            "title":"Lizard1",
+            "title":"Septic System Inspection",
             "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-            "id":"lizard1",
-            "link":"/services/lizard1"
+            "id":"inspection",
+            "link":"/services/inspection"
         },
         {
             "image":{
-                "image":"images/lizard.jpg",
-                "title":"Contemplative Reptile"
+                "image":"images/services/installation.jpg",
+                "title":"Tank and Field Installation"
                 },
-            "title":"Lizard2",
+            "title":"Tank and Field Installation",
             "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-            "id":"lizard2",
-            "link":"/services/lizard2"
+            "id":"installation",
+            "link":"/services/installation"
         },
         {
             "image":{
-                "image":"images/lizard.jpg",
-                "title":"Contemplative Reptile"
+                "image":"images/services/knightlogo.gif",
+                "title":"Knight Treatment Systems Logo"
                 },
-            "title":"Lizard3",
+            "title":"Knight Treatment Systems",
             "description":"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-            "id":"lizard3",
-            "link":"/services/lizard3"
+            "id":"knighttreatment",
+            "link":"/services/knighttreatment"
         },
         {
             "image":{

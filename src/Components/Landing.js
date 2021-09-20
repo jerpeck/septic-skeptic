@@ -1,18 +1,16 @@
 import React from 'react';
-import Footer from './Footer';
+import BasicPage from './BasicPage';
 import Hero from './Hero';
-import Nav from './Nav';
 import Portfolio from './Portfolio';
 
 export default function Landing(props) {
-    const { data, } = props;
+    const { data } = props;
+    const socialMedia = data.socialMedia;
 
     return(
-        <div>
-            <Nav />
+        <BasicPage socialMedia={socialMedia} >            
             <Hero hero={data.hero} />
             <Portfolio works={data.works} />
-            <Footer />
-        </div>
+        </BasicPage>
     )
 }

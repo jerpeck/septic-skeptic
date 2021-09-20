@@ -6,13 +6,13 @@ const theme = createTheme({
             main: '#42A5F5',
         },
         secondary: {
-            main: '#F59342'
+            main: '#FFE500'
         },
         error: {
             main: '#FF1616'
         },
         warning: {
-            main: '#FFE500'
+            main: '#F59342'
         },
         info: {
             main: '#36F55C'

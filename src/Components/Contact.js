@@ -22,39 +22,40 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-export default function Contact() {
-    const phoneRegExp = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
+export default function Contact(props) {
+    const { socialMedia } = props.data;
+    const phoneRegExp = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
 
-        const formik = useFormik({
-            initialValues: {
-                firstName: '',
-                lastName: '',
-                email: '',
-                phone: '',
-                subject: '',
-                message: '',
-            },
-            validationSchema: Yup.object({
-                firstName: Yup.string()
-                    .max(20, 'That name is a little long.')
-                    .required('Required'),
-                lastName: Yup.string()
-                    .max(30, 'That name is a little long.')
-                    .required('Required'),
-                email: Yup.string()
-                    .email('Invalid email address').required('Required'),
-                phone: Yup.string()
-                    .matches(phoneRegExp, 'Phone number is not valid')
-                    .required('Required'),
-                subject: Yup.string()
-                    .required('Required'),
-                message: Yup.string()
-                    .required('Required'),
-              }),
-            onSubmit: values => {
-                alert(JSON.stringify(values, null, 2))
-            },
-        });
+    const formik = useFormik({
+        initialValues: {
+            firstName: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            subject: '',
+            message: '',
+        },
+        validationSchema: Yup.object({
+            firstName: Yup.string()
+                .max(20, 'That name is a little long.')
+                .required('Required'),
+            lastName: Yup.string()
+                .max(30, 'That name is a little long.')
+                .required('Required'),
+            email: Yup.string()
+                .email('Invalid email address').required('Required'),
+            phone: Yup.string()
+                .matches(phoneRegExp, 'Phone number is not valid')
+                .required('Required'),
+            subject: Yup.string()
+                .required('Required'),
+            message: Yup.string()
+                .required('Required'),
+            }),
+        onSubmit: values => {
+            alert(JSON.stringify(values, null, 2))
+        },
+    });
 
     const classes = useStyles();
 

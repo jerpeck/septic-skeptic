@@ -27,18 +27,19 @@ class SepticSkeptic extends Component {
     constructor(props){
         super(props);
         this.state = {
-            data: {}
+            data: {},
+            isLoading: true,
         }
         this.updateData = this.updateData.bind(this);
     }
 
     async updateData(){
-        const data = await axios.get('/siteData.json')
+        await axios.get('/siteData.json')
         .then((data) => {
-            // console.log(data.data);
-            // const newData = JSON.parse(data.data);
-            // console.log(newData);
-            this.setState({data: data.data});
+            this.setState({data: data.data,
+                 isLoading: false
+                });
+            console.log("SS.state: ", this.state);
         })
         .catch((err) => {
             console.log(err);
@@ -46,6 +47,7 @@ class SepticSkeptic extends Component {
     };
 
     componentDidMount(){
+        this.setState({isLoading: true});
         this.updateData();
     };
 
@@ -56,16 +58,17 @@ class SepticSkeptic extends Component {
                         <Router>
                             <Switch>
                                 <Route exact path="/">
-                                    {this.state.data.hero && <Landing data={this.state.data} />}
+                                    {!this.state.isLoading && <Landing data={this.state.data} />}
                                 </Route>
                                 <Route exact path="/about" >
-                                    <About title="About Us" description={this.state.data.aboutDescription} />
+                                    {!this.state.isLoading && <About title="About Us" data={this.state.data} />}
                                 </Route>
                                 <Route exact path="/contact">
-                                    <Contact />
+                                    {this.state.data && this.state.data.length > 0 && <Contact data={this.state.data} />}
+                                    {/* {!this.state.isLoading && <Contact data={this.state.data} />} */}
                                 </Route>
                                 <Route exact path="/services/:id" render={routeProps => (
-                                    this.state.data.works && <ContentPage works={this.state.data.works} {...routeProps} />
+                                    !this.state.isLoading && <ContentPage data={this.state.data} {...routeProps} />
                                 )}/>
                             </Switch>
                         </Router>
